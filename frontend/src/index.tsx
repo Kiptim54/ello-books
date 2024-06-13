@@ -4,6 +4,10 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// MUI
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "./theme/AppTheme";
+
 // setup apollo and graphql
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
@@ -20,7 +24,9 @@ const client = new ApolloClient({
 root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <App />
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
     </ApolloProvider>
   </React.StrictMode>
 );
