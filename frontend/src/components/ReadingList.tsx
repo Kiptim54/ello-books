@@ -38,7 +38,6 @@ export default function ReadingList(props: IReadingListProps) {
 
       <Grid container spacing={4}>
         {selectedBooks.map((book: IBooks, index) => {
-          const image = require(`../${book.coverPhotoURL}`);
           return (
             <Grid item xs={12} sm={6} md={4} alignSelf="stretch" key={index}>
               <BookCard currentBook={book} removeBook={removeBook} />
