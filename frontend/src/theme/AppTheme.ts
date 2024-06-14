@@ -34,6 +34,9 @@ export const theme = createTheme({
       main: "#FABD33",
       dark: "#FAAD00",
     },
+    error: {
+      main: "#F76434",
+    },
   },
   //   https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap add mulish to typography
   typography: {
