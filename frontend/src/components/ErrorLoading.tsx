@@ -12,13 +12,13 @@ export default function ErrorLoading() {
       }}
     >
       <Typography
-        variant="h4"
+        variant="h5"
         color="warning.dark"
         fontWeight="bold"
         textAlign="center"
       >
         {" "}
-        Ooops! Error loading the books...
+        Ooops! Error loading the books... Ensure the backend server is running.
       </Typography>
     </Box>
   );
